@@ -10,7 +10,6 @@ DROP SEQUENCE animeSequence;
 CREATE TABLE Animes(
      animeId NUMBER(5) NOT NULL PRIMARY KEY
     ,title VARCHAR(100) NOT NULL
-    ,description VARCHAR(4000)
     ,episodes NUMBER NOT NULL
     ,rating VARCHAR(5) NOT NULL
     ,score INT NOT NULL
