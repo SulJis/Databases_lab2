@@ -12,7 +12,7 @@ CREATE TABLE Animes(
     ,title VARCHAR(100) NOT NULL
     ,episodes NUMBER NOT NULL
     ,rating VARCHAR(5) NOT NULL
-    ,score INT NOT NULL
+    ,score NUMBER(2,2) NOT NULL
     , CHECK(score > 0 AND score <= 10 AND episodes > 0)
  );
  
