@@ -5,6 +5,7 @@ DROP TABLE Studios CASCADE CONSTRAINTS;
 DROP TABLE GenresAnimes CASCADE CONSTRAINTS;
 DROP TABLE StudiosAnimes CASCADE CONSTRAINTS;
 DROP SEQUENCE animeSequence;
+DROP VIEW totalCount;
 
 -creating tables
 CREATE TABLE Animes(
@@ -81,3 +82,6 @@ BEGIN
   INTO :new.animeId
   FROM dual;
 END;
+
+CREATE VIEW totalCount AS
+    SELECT COUNT(Animes.animeId) as totalAnimes FROM Animes;
