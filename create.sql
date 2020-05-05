@@ -7,7 +7,7 @@ DROP TABLE StudiosAnimes CASCADE CONSTRAINTS;
 DROP SEQUENCE animeSequence;
 DROP VIEW totalCount;
 
--creating tables
+--creating tables
 CREATE TABLE Animes(
      animeId NUMBER(5) NOT NULL PRIMARY KEY
     ,title VARCHAR(100) NOT NULL
